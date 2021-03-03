@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg" href="../images/logo.svg">
+    <link href="../webcommons/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <!--load all styles -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+</head>
+
+<body class="horizontal center">
+    <form class="stdCard"  method="POST">
+
+        <header>
+            <h2>Really logout ?</h2>
+           
+        </header>
+        <div class="content">
+            <% if(message != null && message != "") {%>
+                <span class="error"><%= message %></span>
+            <% } %>
+            <input id="really" name="really" type="hidden" value="NO">
+            <div class="container horizontal spaceBetween">
+                <button onclick="clickYes()">Yes</button>
+                <button >No</button>
+              
+            </div>
+        </div>
+    </form>
+    <script>
+        function clickYes()
+        {
+            var inp = document.getElementById("really");
+            inp.value = "YES";
+        }
+    </script>
+</body>
+
+</html>

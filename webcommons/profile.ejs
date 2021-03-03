@@ -1,0 +1,18 @@
+
+
+  window.apiUser = <%- JSON.stringify(user,null,2) %>
+  function user()
+  {
+      if(window.apiUser == null)
+          window.apiUser = { displayName: ""};
+      return window.apiUser;
+  }
+
+  window.manifest = <%- manifest %>
+  function manifest()
+  {
+    if(window.manifest == null)
+      window.manifest = { title: '?',version: '?', copyright:'?'}
+    
+    return window.manifest;
+  }
