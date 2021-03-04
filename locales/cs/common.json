@@ -1,0 +1,21 @@
+{
+    "Login":"Login",
+    "Username":"Username",
+    "Password":"Password",
+    "Ok":"Ok",
+    "Create user":"Create user",
+    "New user":"New user",
+    "Full name":"Full name",
+    "Password (again)":"Password (again)",
+    "E-mail":"E-mail",
+    "User profile":"User profile",
+    "Current password":"Current password",
+    "New password":"New password",
+    "Confirm new password":"Confirm new password",
+    "Update":"Update",
+    "Really logout ?":"Really logout ?",
+    "Yes":"Yes",
+    "No":"No"
+
+
+}

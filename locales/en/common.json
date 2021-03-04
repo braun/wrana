@@ -1,0 +1,21 @@
+{
+    "Login":"Přihlášení",
+    "Username":"Uživatelské jméno",
+    "Password":"Heslo",
+    "Ok":"Ok",
+    "Create user":"Vytvoř uživatele",
+    "New user":"Nový uživatel",
+    "Full name":"Celé jméno",
+    "Password (again)":"Heslo (znovu)",
+    "E-mail":"E-mail",
+    "User profile":"Vlastnosti uživatele",
+    "Current password":"Aktuální heslo",
+    "New password":"Nové heslo",
+    "Confirm new password":"Nové heslo (znovu)",
+    "Update":"Uložit změny",
+    "Really logout ?":"Opravdu si přejete se odhlásit ?",
+    "Yes":"Ano",
+    "No":"Ne"
+
+
+}
