@@ -1,5 +1,6 @@
 
 var ejs = require('ejs');
+var i18n = require('i18next');
 const { response } = require('express');
 
 function renderFile(res,file,model,opts)
@@ -8,7 +9,7 @@ function renderFile(res,file,model,opts)
         opts = {};
     if(opts.mime)
         res.set('Content-Type', opts.mime);
-    
+    Object.assign(model,ejs.locals);
     ejs.renderFile(__dirname + file,model,null,
     function(err,str)
     {
@@ -21,7 +22,17 @@ function renderFile(res,file,model,opts)
             res.status(500).send(str);
           });
       } else
+      {
+        str = res.i18n.services.interpolator.interpolate(str,{},res.language,{
+          missingInterpolationHandler: (s,match)=>
+          {
+            const k = match[1];
+            const r= res.i18n.t(k);
+            return r;
+          }
+        })
         res.send(str)
+      }
     });
   }
 

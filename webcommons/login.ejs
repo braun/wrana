@@ -16,25 +16,25 @@
         <form class="stdCard"  method="POST">
 
             <header>
-                <h2><%= t("Login")%></h2>
+                <h2>{{Login}}</h2>
             
             </header>
-            <div class="content">
+            <div class="content stdLabelWidth">
                 <div class="growFormField">
-                    <label>Username:</label><input type="text" id="username" name="username">
+                    <label>{{Username}}:</label><input type="text" id="username" name="username">
                 </div>
                 <div class="growFormField">
-                    <label>Password:</label><input type="password" id="password" name="password" >
+                    <label>{{Password}}:</label><input type="password" id="password" name="password" >
                 </div>
                 <div class="container horizontal spaceBetween">
-                    <button>Ok</button>
+                    <button>{{Ok}}</button>
                     <% if(message) {%>
-                        <span class="error"><%= message %></span>
+                        <span class="error"><%= t(message) %></span>
                     <% } %>
                 </div>
             </div>
         </form>
-        <a href="create" class="container stdcol">Vytvořit uživatele</a>
+        <a href="create" class="container stdcol">{{Create user}}</a>
     </div>
 </body>
 

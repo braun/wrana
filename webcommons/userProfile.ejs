@@ -14,30 +14,30 @@
     <form class="stdCard"  method="POST">
 
         <header>
-            <h2>User profile</h2>
+            <h2>{{User profile}}</h2>
            
         </header>
-        <div class="content">
+        <div class="content stdLabelWidth2">
             <div class="growFormField">
-                <label>Username:</label><strong><%= username %></strong>
+                <label>{{Username}}:</label><strong><%= username %></strong>
             </div>
             <div class="growFormField">
-                <label>Full name:</label><input type="text" id="fullname" name="fullname" value='<%= fullname %>''>
+                <label>{{Full name}}:</label><input type="text" id="fullname" name="fullname" value='<%= fullname %>''>
             </div>
             <div class="growFormField">
-                <label>Current password:</label><input type="password" id="password" name="password" >
+                <label>{{Current password}}:</label><input type="password" id="password" name="password" >
             </div>
             <div class="growFormField">
-                <label>New password:</label><input type="password" id="passwordNew" name="passwordNew" >
+                <label>{{New password}}:</label><input type="password" id="passwordNew" name="passwordNew" >
             </div>
             <div class="growFormField">
-                <label>Confirm new password:</label><input type="password" id="passwordAgain" name="passwordAgain" >
+                <label>{{Confirm new password}}:</label><input type="password" id="passwordAgain" name="passwordAgain" >
             </div>
             <div class="growFormField">
-                <label>E-mail:</label><strong><%= email %></strong> 
+                <label>{{E-mail}}:</label><strong><%= email %></strong> 
             </div>
             <div class="container horizontal spaceBetween">
-                <button>Update</button>
+                <button>{{Update}}</button>
                 <% if(message) {%>
                     <span class="error"><%= message %></span>
                 <% } %>

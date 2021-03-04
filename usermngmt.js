@@ -119,7 +119,7 @@ module.exports = async function(app)
     if(really == "YES" && req.logout)
         req.logout();
         
-    res.redirect('login');
+    res.redirect('/');
   });
 
   // create new user gui
